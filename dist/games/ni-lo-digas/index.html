@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#25203b">
+  <meta name="description" content="Di todo, menos lo obvio. Un juego de palabras para juntarse: 1.000 cartas, 20 categorías y todos los equipos que quieras.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ni lo digas">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" crossorigin="use-credentials" href="../../manifest.webmanifest">
+  <link rel="icon" href="../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Ni lo digas · Juego de palabras</title>
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="BUKLABS Play"><link rel="stylesheet" href="../../shared.css"></head>
+<body><div class="buk-bar"><a href="../../" aria-label="Volver a BUKLABS Play">‹ <img src="../../assets/buklabs-play-logo.png" alt="BUKLABS Play" width="2048" height="682"></a><span>Creado por <b>BUKLABS</b></span></div>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand" aria-label="Ni lo digas, inicio"><img class="game-wordmark" src="../../assets/ni-lo-digas-logo.png" alt="Ni lo digas" width="2048" height="682"></a>
+    <nav aria-label="Opciones del juego"><span id="offline-indicator" class="connection"><span class="status-dot"></span><span id="offline-label">Preparando…</span></span><button class="nav-button" id="help-button" type="button">Cómo jugar <span aria-hidden="true">↗</span></button><button class="install-button" id="install-button" type="button"><span aria-hidden="true">↓</span> Instalar</button></nav>
+  </header>
+  <main id="app"></main>
+  <footer class="site-footer"><span>Creado por BUKLABS · Una palabra. Mil maneras de decirla.</span><span>Adaptación independiente inspirada en Tabú · Cartas originales</span></footer>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript>Activa JavaScript para jugar a Ni lo digas.</noscript>
+  <script src="./deck.js"></script>
+  <script src="./engine.js"></script>
+  
+  <script src="../../platform.js"></script><script src="./app.js"></script>
+</body>
+</html>
